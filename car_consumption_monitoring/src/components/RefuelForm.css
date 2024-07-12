@@ -1,0 +1,23 @@
+.form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  input {
+    flex: 1;
+  }
+  
+  .submit-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  

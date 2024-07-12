@@ -1,0 +1,18 @@
+# The Docker image that will be used to build your app
+image: "image: ruby:2.7"
+
+
+cache:
+  paths:
+    - redux-shop-app/node_modules/
+
+pages:
+  stage: deploy
+  script:
+    - cp -r redux-shop-app/build public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
+
